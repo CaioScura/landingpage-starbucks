@@ -46,13 +46,3 @@
     }
 }
 
-@media (min-width: 768px){
-    #trendign{
-        .trending-card{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 24px;
-        }
-    }
-}

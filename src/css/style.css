@@ -76,3 +76,47 @@ a.btn{
 }
 
 
+
+@media (min-width: 1200px){
+    #about{
+        margin: 4px;
+        justify-content: center;
+    }
+
+    .about-content{
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .about-image{
+        order: 1;
+    }
+
+    .about-info:first-child{
+        order: 2;
+    }
+
+    .about-info:last-child{
+        order: 2;
+    }
+}
+
+
+@media (min-width: 768px){
+    #container{
+        background-image: url('../images/background-desktop.png');
+        background-size: cover;
+        background-position: start;
+        background-repeat: no-repeat;
+    }
+
+    #trending{
+        .trending-card{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+    }
+}
