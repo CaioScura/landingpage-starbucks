@@ -60,7 +60,7 @@ a.btn{
     background-color: var(--color-primary-1);
     color: var(--color-neutral-0);
 
-    &:hover{
+    .btn-default:hover{
         background-color: var(--color-primary-2);
     }
 }
@@ -98,7 +98,7 @@ footer{
     }
 
     #trending{
-        .trending-card{
+        .trending-cards{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -128,27 +128,31 @@ footer{
 
 @media (min-width: 1200px){
     #about{
-        margin: 4px;
+        margin: 4%;
         justify-content: center;
+
+        .about-content{
+            flex-direction: row;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .about-image{
+            order: 1;
+        }   
+
+        .about-info:first-child{
+            order: 2;
+        }
+
+        .about-info:last-child{
+            order: 2;
+        }
     }
 
-    .about-content{
-        flex-direction: row;
-        align-items: center;
-        gap: 48px;
-    }
+    
 
-    .about-image{
-        order: 1;
-    }
-
-    .about-info:first-child{
-        order: 2;
-    }
-
-    .about-info:last-child{
-        order: 2;
-    }
+    
 }
 
 
